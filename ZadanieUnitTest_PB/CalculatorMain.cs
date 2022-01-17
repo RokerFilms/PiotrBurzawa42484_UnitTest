@@ -20,15 +20,16 @@ namespace ZadanieUnitTest_PB
                 Console.WriteLine("Sa dwa pierwiastki: " + x1 + " oraz " + x2);
                 return "Dwa pierwiastki rzeczywiste";
             }
-            else if (delta == 1)
+            else if (delta == 0)
             {
                 delta = (Math.Sqrt(delta));
                 x0 = -b / (2 * a);
                 Console.WriteLine("Jeden pierwiastek rzeczywisty: " + x0);
-                return "Dwa pierwiastki rzeczywiste";
+                return "Jeden pierwiastek rzeczywisty";
             }
             else
                 Console.WriteLine("Brak pierwiastkow");
+                return "Brak pierwiastkow rzeczywistych";
 
 
             return a.ToString();
