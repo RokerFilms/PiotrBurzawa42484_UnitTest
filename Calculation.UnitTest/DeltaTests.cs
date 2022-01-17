@@ -9,13 +9,13 @@ namespace Calculation.UnitTest
     class DeltaTests
     {
         [Test]
-        public void CheckDelta()
+        public void Delta_WhenReturnDelta()
         {
             double x1, x2, x0;
 
-            double a = 4;
-            double b = 5;
-            double c = 3;
+            double a = 6;
+            double b = 10;
+            double c = -1;
 
             //arrange
             var cm = new CalculatorMain();
@@ -23,8 +23,17 @@ namespace Calculation.UnitTest
             //act
             var delta = cm.Delta(a, b, c);
 
-            //assert
-            Assert.AreEqual(2, delta);
+
+            //assert oraz metoda
+
+            Assert.That(delta, Is.EqualTo("Dwa pierwiastki rzeczywiste"));
+
+
+
+
+
+
+
         }
     }
 }
