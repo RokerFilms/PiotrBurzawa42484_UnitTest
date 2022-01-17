@@ -218,7 +218,7 @@ namespace Calculation.UnitTest
 
         //assert
 
-        Assert.IsTrue(delta);
+        Assert.IsFalse(delta);
 
     }
 

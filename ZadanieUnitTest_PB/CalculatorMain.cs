@@ -146,11 +146,11 @@ namespace ZadanieUnitTest_PB
                 double delta = b * b - 4 * a * c;
                 if (delta > 0 || delta == 0)
                 {
-                    return false;
+                    return true;
                 }
                 else
                     Console.WriteLine("Brak pierwiastkow rzeczywistych");
-                    return true;
+                    return false;
 
             }
         }
